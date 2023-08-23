@@ -12,7 +12,7 @@ using std::vector;
 
 int main() {
   cout << "Welcome to the fortune teller program!" << endl;
-  cout << "Please enter your name: ";
+  cout << "Please enter your name:\n";
   string name;
   cin >> name;
   cout << "Please enter the time of year when you were born:\n(pick from "
@@ -36,10 +36,9 @@ int main() {
                         "finds errors quicker than the compiler",
                         "is not afraid of C++ error messages"};
   int modl2 = (name.size()) % 3;
-  cout << "Here is your description: \n";
-   cout << name << ", the "
-       << adjectives[modl1] << " " << noun[season] << " that " << ending[modl2]
-       << endl;
+  cout << "\nHere is your description:\n";
+  cout << name << ", the " << adjectives[modl1] << " " << noun[season]
+       << " that " << ending[modl2] << endl;
 
   return 0;
 }
