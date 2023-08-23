@@ -17,10 +17,10 @@ int main() {
   cout << "Welcome to the GUESSING GAME!\nI will generate a number and you "
           "will guess it!"
        << endl;
-  cout << "Please provide the smallest number: " << endl;
+  cout << "Please provide the smallest number:" << endl;
   int_fast16_t min;
   cin >> min;
-  cout << "Please provide the largest number: " << endl;
+  cout << "Please provide the largest number:" << endl;
   int_fast16_t max;
   cin >> max;
   int_fast16_t random_number = get_random_number(min, max);
@@ -28,7 +28,7 @@ int main() {
   int_fast16_t K = 0;
   while (true) {
     K++;
-    cout << "Please provide the next guess:" << endl;
+    cout << "Please provide the next guess: ";
     int_fast16_t guess;
     cin >> guess;
     if (guess == random_number) {
